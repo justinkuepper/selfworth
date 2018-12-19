@@ -1,0 +1,182 @@
+html {
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+*:hover {
+  cursor: default;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+body, input {
+  font: menu;
+}
+
+textarea, input, div, button {
+  outline: none;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  padding: 3em;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.content h1 {
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.sidebar {
+  order: -1;
+  min-width: 220px;
+  height: 100vh;
+  background-color: #f5f6f7;
+  border-right: 1px solid #f0f1f2;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar .tools {
+  margin-top: auto;
+  text-align: center;
+  border-top: 1px solid #e7e8e8;
+  padding: 0 -2em 0 -2em;
+}
+
+.sidebar .tools button {
+  font-size: 1em;
+  font-weight: 500;
+  color: #666;
+  margin: 0.5em;
+  background: none;
+  border: none;
+  padding: 0.5em;
+  border-radius: 5px;
+  border: 1px solid #f5f6f7;
+}
+
+.sidebar button:hover {
+  border: 1px solid #e7e8e8;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 3em 2em 0 2em;
+}
+
+.sidebar ul li {
+  margin: 0;
+  color: #999;
+  padding: 0.3em 0.5em;
+  margin: 0.5em auto;
+  font-weight: 700;
+  font-size: 1.1em;
+  list-style-type: none;
+}
+
+.sidebar ul li.active {
+  background-color: #e1e4e7;
+  border-radius: 5px;
+}
+
+.sidebar ul li {
+  text-decoration: none;
+  color: #333;
+}
+
+.client-form {
+  margin: 0;
+  padding: 3em;
+}
+
+.client-form input {
+  width: 100%;
+  font-size: 2em;
+  font-weight: 700;
+  border: none;
+  margin: 0.5em 0;
+  padding: 0;
+}
+
+.time-form input {
+  width: 80%;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top: 1px solid #e1e4e7;
+  border-bottom: 1px solid #e1e4e7;
+  border-left: 1px solid #e1e4e7;
+  border-right: 1px solid #e1e4e7;
+  padding: 0.5em;
+}
+
+.time-form button {
+  width: 20%;
+  height: 40px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #666;
+  text-transform: uppercase;
+  border-top: 1px solid #e1e4e7;
+  border-bottom: 1px solid #e1e4e7;
+  border-right: 1px solid #e1e4e7;
+  border-left: none;
+  padding: 0.5em;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 1em;
+  border-top: 1px solid #e1e4e7;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f5f6f7;
+}
+
+table td {
+  width: 50%;
+  border-bottom: 1px solid #e1e4e7;
+  margin: 0;
+  padding: 1em;
+}
+
+.time-table-time, .time-table-task {
+  display: none;
+}

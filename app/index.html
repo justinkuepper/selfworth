@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; connect-src *">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Self Worth</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <client-list class="client-list"></client-list>
+        <div class="tools">
+          <button class="add-client-button">Add Client</button>
+        </div>
+      </div>
+      <div class="content">
+        <client-details class="client-details" cid></client-details>
+      </div>
+    </div>
+    <link rel="import" href="./components/ClientList/ClientList.html">
+    <link rel="import" href="./components/ClientDetails/ClientDetails.html">
+  </body>
+  <script>
+    require('./renderer');
+  </script>
+</html>

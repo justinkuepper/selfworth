@@ -1,0 +1,21 @@
+{
+  "name": "selfworth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild": "electron-rebuild -f -w sqlite3"
+  },
+  "author": "Justin Kuepper",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^3.0.10",
+    "knex": "^0.15.2",
+    "moment": "^2.22.2",
+    "sqlite3": "^4.0.4"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.8.2"
+  }
+}
