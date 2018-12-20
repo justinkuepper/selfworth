@@ -23,22 +23,13 @@ class ClientDetails extends HTMLElement {
     const template = clientDetailsDocument.querySelector('#client-details-template');
     const instance = template.content.cloneNode(true);
     shadowRoot.appendChild(instance);
-
-    const cid = this.getAttribute('cid');
-    if (cid !== null) {
-      database('clients').select().where('id', cid).then((client) => {
-        this.render(client[0]);
-      }).catch((err) => {
-        console.log(err);
-      });
-    } else {
-      console.log('Client ID not set.');
-    }
   }
 
-  render(clientDetails) {
+  render(clientDetails = {name: "", id: ""}) {
     const title = this.shadowRoot.querySelector('.title');
+    const clientEntries = this.shadowRoot.querySelector('.client-entries');
     title.innerHTML = clientDetails.name;
+    clientEntries.setAttribute('cid', clientDetails.id);
   }
 
   static get observedAttributes() { return ['cid'] }

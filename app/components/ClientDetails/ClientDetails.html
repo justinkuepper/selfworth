@@ -1,16 +1,7 @@
 <template id="client-details-template">
   <link rel="stylesheet" href="components/ClientDetails/ClientDetails.css">
   <h1 class="title"></h1>
-  <div class="time-form">
-    <input type="text" class="time-form-field" placeholder="What are you working on?"><button class="task-button">Start</button>
-  </div>
-  <table>
-    <tbody class="entries-table">
-      <tr>
-        <td class="time-table-task"></td>
-        <td class="time-table-time"></td>
-      </tr>
-    </tbody>
-  </table>
+  <client-entry class="client-entry" cid></client-entry>
+  <client-entries class="client-entries" cid></client-entries>
 </template>
 <script src="./ClientDetails.js"></script>
