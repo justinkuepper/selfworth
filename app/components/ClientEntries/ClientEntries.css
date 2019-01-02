@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+  border-spacing: 0;
+  margin-top: 1em;
+  border-top: 1px solid #f0f1f2;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f5f6f7;
+}
+
+table td {
+  width: 50%;
+  border-bottom: 1px solid #f0f1f2;
+  margin: 0;
+  padding: 1em;
+}

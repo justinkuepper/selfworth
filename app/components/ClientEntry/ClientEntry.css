@@ -1,0 +1,25 @@
+.time-form {
+  display: flex;
+  margin: 1em 0;
+}
+
+.time-form-field {
+  outline: none;
+  flex: 3;
+  width: 75%;
+  padding: 1em;
+  border: 1px solid #f0f1f2;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.task-button {
+  flex: 1;
+  width: 25%;
+  border-top: 1px solid #f0f1f2;
+  border-right: 1px solid #f0f1f2;
+  border-bottom: 1px solid #f0f1f2;
+  border-left: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
